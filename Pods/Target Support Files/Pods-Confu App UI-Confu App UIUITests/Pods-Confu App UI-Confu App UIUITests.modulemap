@@ -1,0 +1,6 @@
+framework module Pods_Confu_App_UI_Confu_App_UIUITests {
+  umbrella header "Pods-Confu App UI-Confu App UIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

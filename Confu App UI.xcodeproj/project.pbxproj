@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4210BB268F460F00D5F235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4210B9268F460F00D5F235 /* LaunchScreen.storyboard */; };
+		2C4210C6268F461000D5F235 /* Confu_App_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4210C5268F461000D5F235 /* Confu_App_UITests.swift */; };
+		2C4210D1268F461000D5F235 /* Confu_App_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4210D0268F461000D5F235 /* Confu_App_UIUITests.swift */; };
+		2C421130268F503D00D5F235 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C421128268F503C00D5F235 /* TableViewCell.swift */; };
+		2C421131268F503D00D5F235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C421129268F503C00D5F235 /* Assets.xcassets */; };
+		2C421132268F503D00D5F235 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112A268F503C00D5F235 /* TableViewVC.swift */; };
+		2C421133268F503D00D5F235 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112B268F503C00D5F235 /* TabbarController.swift */; };
+		2C421134268F503D00D5F235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112C268F503D00D5F235 /* ViewController.swift */; };
+		2C421135268F503D00D5F235 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112D268F503D00D5F235 /* MyCell.swift */; };
+		2C421136268F503D00D5F235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112E268F503D00D5F235 /* AppDelegate.swift */; };
+		2C421137268F503D00D5F235 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112F268F503D00D5F235 /* CollectionViewVC.swift */; };
+		6659CFC9C7985FB8CE11185B /* Pods_Confu_App_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */; };
+		7694216DD7BE156AB00FE066 /* Pods_Confu_App_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */; };
+		9CF585EDCC4FE55BE56FD7EB /* Pods_Confu_App_UI_Confu_App_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4210C2268F461000D5F235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4210A3268F460A00D5F235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4210AA268F460A00D5F235;
+			remoteInfo = "Confu App UI";
+		};
+		2C4210CD268F461000D5F235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4210A3268F460A00D5F235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4210AA268F460A00D5F235;
+			remoteInfo = "Confu App UI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C4210AB268F460A00D5F235 /* Confu App UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confu App UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4210BA268F460F00D5F235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C4210BC268F460F00D5F235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4210C1268F461000D5F235 /* Confu App UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Confu App UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4210C5268F461000D5F235 /* Confu_App_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confu_App_UITests.swift; sourceTree = "<group>"; };
+		2C4210C7268F461000D5F235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4210CC268F461000D5F235 /* Confu App UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Confu App UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4210D0268F461000D5F235 /* Confu_App_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confu_App_UIUITests.swift; sourceTree = "<group>"; };
+		2C4210D2268F461000D5F235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C421127268F503B00D5F235 /* Confu App UI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Confu App UI-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C421128268F503C00D5F235 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2C421129268F503C00D5F235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C42112A268F503C00D5F235 /* TableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
+		2C42112B268F503C00D5F235 /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		2C42112C268F503D00D5F235 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C42112D268F503D00D5F235 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		2C42112E268F503D00D5F235 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C42112F268F503D00D5F235 /* CollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
+		50C6AA2F390C8FBC3B7AD967 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI-Confu App UIUITests.release.xcconfig"; path = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DCDCFFD1C701C941AC2144 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI-Confu App UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75D28E1276D7FD4B202143D5 /* Pods-Confu App UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UITests.release.xcconfig"; path = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A108582AD43D12D9CA910A2 /* Pods-Confu App UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI.release.xcconfig"; path = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.release.xcconfig"; sourceTree = "<group>"; };
+		9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UI_Confu_App_UIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8E1BFA2598D7B87B7A4E69 /* Pods-Confu App UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.debug.xcconfig"; sourceTree = "<group>"; };
+		E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UITests.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4210A8268F460A00D5F235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7694216DD7BE156AB00FE066 /* Pods_Confu_App_UI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210BE268F461000D5F235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6659CFC9C7985FB8CE11185B /* Pods_Confu_App_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210C9268F461000D5F235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF585EDCC4FE55BE56FD7EB /* Pods_Confu_App_UI_Confu_App_UIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4210A2268F460A00D5F235 = {
+			isa = PBXGroup;
+			children = (
+				2C4210AD268F460A00D5F235 /* Confu App UI */,
+				2C4210C4268F461000D5F235 /* Confu App UITests */,
+				2C4210CF268F461000D5F235 /* Confu App UIUITests */,
+				2C4210AC268F460A00D5F235 /* Products */,
+				3DC02E0895DF8EF3D575B838 /* Pods */,
+				7C6ACDD456510A7E64B0ADA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4210AC268F460A00D5F235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4210AB268F460A00D5F235 /* Confu App UI.app */,
+				2C4210C1268F461000D5F235 /* Confu App UITests.xctest */,
+				2C4210CC268F461000D5F235 /* Confu App UIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4210AD268F460A00D5F235 /* Confu App UI */ = {
+			isa = PBXGroup;
+			children = (
+				2C4210B9268F460F00D5F235 /* LaunchScreen.storyboard */,
+				2C4210BC268F460F00D5F235 /* Info.plist */,
+				2C42112E268F503D00D5F235 /* AppDelegate.swift */,
+				2C421129268F503C00D5F235 /* Assets.xcassets */,
+				2C42112F268F503D00D5F235 /* CollectionViewVC.swift */,
+				2C42112D268F503D00D5F235 /* MyCell.swift */,
+				2C42112B268F503C00D5F235 /* TabbarController.swift */,
+				2C421128268F503C00D5F235 /* TableViewCell.swift */,
+				2C42112A268F503C00D5F235 /* TableViewVC.swift */,
+				2C42112C268F503D00D5F235 /* ViewController.swift */,
+				2C421127268F503B00D5F235 /* Confu App UI-Bridging-Header.h */,
+			);
+			path = "Confu App UI";
+			sourceTree = "<group>";
+		};
+		2C4210C4268F461000D5F235 /* Confu App UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4210C5268F461000D5F235 /* Confu_App_UITests.swift */,
+				2C4210C7268F461000D5F235 /* Info.plist */,
+			);
+			path = "Confu App UITests";
+			sourceTree = "<group>";
+		};
+		2C4210CF268F461000D5F235 /* Confu App UIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4210D0268F461000D5F235 /* Confu_App_UIUITests.swift */,
+				2C4210D2268F461000D5F235 /* Info.plist */,
+			);
+			path = "Confu App UIUITests";
+			sourceTree = "<group>";
+		};
+		3DC02E0895DF8EF3D575B838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB8E1BFA2598D7B87B7A4E69 /* Pods-Confu App UI.debug.xcconfig */,
+				9A108582AD43D12D9CA910A2 /* Pods-Confu App UI.release.xcconfig */,
+				71DCDCFFD1C701C941AC2144 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */,
+				50C6AA2F390C8FBC3B7AD967 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */,
+				E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */,
+				75D28E1276D7FD4B202143D5 /* Pods-Confu App UITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C6ACDD456510A7E64B0ADA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */,
+				B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */,
+				9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4210AA268F460A00D5F235 /* Confu App UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4210D5268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UI" */;
+			buildPhases = (
+				6F9373F4FCF8D7A515F96390 /* [CP] Check Pods Manifest.lock */,
+				2C4210A7268F460A00D5F235 /* Sources */,
+				2C4210A8268F460A00D5F235 /* Frameworks */,
+				2C4210A9268F460A00D5F235 /* Resources */,
+				1B73BB06DFA9EC3998D2BB13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Confu App UI";
+			productName = "Confu App UI";
+			productReference = 2C4210AB268F460A00D5F235 /* Confu App UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4210C0268F461000D5F235 /* Confu App UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4210D8268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UITests" */;
+			buildPhases = (
+				974F72FD2E2C672B4D119B3B /* [CP] Check Pods Manifest.lock */,
+				2C4210BD268F461000D5F235 /* Sources */,
+				2C4210BE268F461000D5F235 /* Frameworks */,
+				2C4210BF268F461000D5F235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4210C3268F461000D5F235 /* PBXTargetDependency */,
+			);
+			name = "Confu App UITests";
+			productName = "Confu App UITests";
+			productReference = 2C4210C1268F461000D5F235 /* Confu App UITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C4210CB268F461000D5F235 /* Confu App UIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4210DB268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UIUITests" */;
+			buildPhases = (
+				6208B8A770EE90B4169E6776 /* [CP] Check Pods Manifest.lock */,
+				2C4210C8268F461000D5F235 /* Sources */,
+				2C4210C9268F461000D5F235 /* Frameworks */,
+				2C4210CA268F461000D5F235 /* Resources */,
+				8FE7FE3CDB66901C56AC503C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4210CE268F461000D5F235 /* PBXTargetDependency */,
+			);
+			name = "Confu App UIUITests";
+			productName = "Confu App UIUITests";
+			productReference = 2C4210CC268F461000D5F235 /* Confu App UIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4210A3268F460A00D5F235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					2C4210AA268F460A00D5F235 = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					2C4210C0268F461000D5F235 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 2C4210AA268F460A00D5F235;
+					};
+					2C4210CB268F461000D5F235 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 2C4210AA268F460A00D5F235;
+					};
+				};
+			};
+			buildConfigurationList = 2C4210A6268F460A00D5F235 /* Build configuration list for PBXProject "Confu App UI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4210A2268F460A00D5F235;
+			productRefGroup = 2C4210AC268F460A00D5F235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4210AA268F460A00D5F235 /* Confu App UI */,
+				2C4210C0268F461000D5F235 /* Confu App UITests */,
+				2C4210CB268F461000D5F235 /* Confu App UIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4210A9268F460A00D5F235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C421131268F503D00D5F235 /* Assets.xcassets in Resources */,
+				2C4210BB268F460F00D5F235 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210BF268F461000D5F235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210CA268F461000D5F235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B73BB06DFA9EC3998D2BB13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confu App UI/Pods-Confu App UI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confu App UI/Pods-Confu App UI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Confu App UI/Pods-Confu App UI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6208B8A770EE90B4169E6776 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confu App UI-Confu App UIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F9373F4FCF8D7A515F96390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confu App UI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE7FE3CDB66901C56AC503C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		974F72FD2E2C672B4D119B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confu App UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4210A7268F460A00D5F235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C421136268F503D00D5F235 /* AppDelegate.swift in Sources */,
+				2C421132268F503D00D5F235 /* TableViewVC.swift in Sources */,
+				2C421135268F503D00D5F235 /* MyCell.swift in Sources */,
+				2C421133268F503D00D5F235 /* TabbarController.swift in Sources */,
+				2C421137268F503D00D5F235 /* CollectionViewVC.swift in Sources */,
+				2C421134268F503D00D5F235 /* ViewController.swift in Sources */,
+				2C421130268F503D00D5F235 /* TableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210BD268F461000D5F235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4210C6268F461000D5F235 /* Confu_App_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4210C8268F461000D5F235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4210D1268F461000D5F235 /* Confu_App_UIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C4210C3268F461000D5F235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4210AA268F460A00D5F235 /* Confu App UI */;
+			targetProxy = 2C4210C2268F461000D5F235 /* PBXContainerItemProxy */;
+		};
+		2C4210CE268F461000D5F235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4210AA268F460A00D5F235 /* Confu App UI */;
+			targetProxy = 2C4210CD268F461000D5F235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C4210B9268F460F00D5F235 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4210BA268F460F00D5F235 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4210D3268F461000D5F235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C4210D4268F461000D5F235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4210D6268F461000D5F235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8E1BFA2598D7B87B7A4E69 /* Pods-Confu App UI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Confu App UI/Confu App UI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C4210D7268F461000D5F235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A108582AD43D12D9CA910A2 /* Pods-Confu App UI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Confu App UI/Confu App UI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C4210D9268F461000D5F235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confu App UI.app/Confu App UI";
+			};
+			name = Debug;
+		};
+		2C4210DA268F461000D5F235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D28E1276D7FD4B202143D5 /* Pods-Confu App UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confu App UI.app/Confu App UI";
+			};
+			name = Release;
+		};
+		2C4210DC268F461000D5F235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DCDCFFD1C701C941AC2144 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Confu App UI";
+			};
+			name = Debug;
+		};
+		2C4210DD268F461000D5F235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C6AA2F390C8FBC3B7AD967 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Confu App UIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Confu.Confu-App-UIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Confu App UI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4210A6268F460A00D5F235 /* Build configuration list for PBXProject "Confu App UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4210D3268F461000D5F235 /* Debug */,
+				2C4210D4268F461000D5F235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4210D5268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4210D6268F461000D5F235 /* Debug */,
+				2C4210D7268F461000D5F235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4210D8268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4210D9268F461000D5F235 /* Debug */,
+				2C4210DA268F461000D5F235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4210DB268F461000D5F235 /* Build configuration list for PBXNativeTarget "Confu App UIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4210DC268F461000D5F235 /* Debug */,
+				2C4210DD268F461000D5F235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C4210A3268F460A00D5F235 /* Project object */;
+}

@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2084165416245DDBF15CA6B8871D4FE0 /* SOTabBarSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14416DA71C81A6999385551D222DDD9 /* SOTabBarSetting.swift */; };
+		26BDE840BA60C4F9297B478CDBE60790 /* Pods-Confu App UI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B0C4A446F6E6FE2D810990F86FE07A /* Pods-Confu App UI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		346BA6077FD1182437CFDEA9F26151CC /* Pods-Confu App UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C0A45AC69BFBB5C159BB71B5A92F /* Pods-Confu App UITests-dummy.m */; };
+		4A61BE15BD27E7644100BFE4C3CFB9BD /* SOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFC6DB37C7F8D9FF7D978BDFCA30F38 /* SOTabBarController.swift */; };
+		4AE2BAEC30EA246DD50DA9FF85C0851D /* Pods-Confu App UI-Confu App UIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760E5DF74E16BC6EB3673CAEF9D77E6 /* Pods-Confu App UI-Confu App UIUITests-dummy.m */; };
+		596BF334B31BC889E73E1B639EB88398 /* Pods-Confu App UI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5CF74047AB6D49FA385AE86D3DBB3 /* Pods-Confu App UI-dummy.m */; };
+		5A10A8E187374C81CF001B66FF7D05EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5BF04AB5D939C35F58485BA809738F02 /* SOTabBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F767DC6C06B7BD725368E397331CE284 /* SOTabBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6845F72A6CBEF992CB360799573E60DB /* Pods-Confu App UI-Confu App UIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C94667B70A5935515355C50CEA102FE /* Pods-Confu App UI-Confu App UIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		888F385ABB6C1FD9206664E3082716BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8CD0C396095AF25E6CEE426784A006C2 /* SOTabBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1625594AA552E0200BA1DC1FE9BB6791 /* SOTabBar-dummy.m */; };
+		94A0E553E0ECBEFEF006C89B0442379F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		979C89C128A39DF871A845F8B86CCD7F /* Pods-Confu App UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 499D639C0B0B7137DF44A72296B4AE0C /* Pods-Confu App UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A031452B2FB26249667B3042DA783490 /* SOTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B47B153AB2CCC5F9E375848FA42183 /* SOTabBar.swift */; };
+		CCD2FAF12D254A0E66F4F6F71F51F16C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DBDDA79E94F0FF32DD9F631B3222EFFE /* SOTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96042B11A5D2AD0F8A692DD1A2DC06A8 /* SOTabBarItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		114F4D43E266954E700DD3B51E01BDB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6ACF3335315E86A27831CC929125D4C;
+			remoteInfo = SOTabBar;
+		};
+		4434E60F75F8267E9380BBF919D9ECA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6ACF3335315E86A27831CC929125D4C;
+			remoteInfo = SOTabBar;
+		};
+		FB7392374AAA31C90D9EF6A6B5AA18B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A7B2393F8F752782D1E2D0D458445A;
+			remoteInfo = "Pods-Confu App UI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		059D8C97EA79619123465B27F832067D /* Pods-Confu App UI-Confu App UIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UI-Confu App UIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FC5CF74047AB6D49FA385AE86D3DBB3 /* Pods-Confu App UI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Confu App UI-dummy.m"; sourceTree = "<group>"; };
+		15A3E4B0A39E41B083F6FB60610D3B05 /* Pods-Confu App UI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Confu App UI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1625594AA552E0200BA1DC1FE9BB6791 /* SOTabBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOTabBar-dummy.m"; sourceTree = "<group>"; };
+		19BAE998A18FE771F138B0C632E86486 /* Pods_Confu_App_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Confu_App_UI.framework; path = "Pods-Confu App UI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C94667B70A5935515355C50CEA102FE /* Pods-Confu App UI-Confu App UIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Confu App UI-Confu App UIUITests-umbrella.h"; sourceTree = "<group>"; };
+		3B19632A0E9B516F7751151C858C249F /* Pods_Confu_App_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Confu_App_UITests.framework; path = "Pods-Confu App UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E5CDA6760406CA43F46A04EEEE6EF09 /* SOTabBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTabBar-prefix.pch"; sourceTree = "<group>"; };
+		4465BDB363CD3AF0819BD511259CADCB /* SOTabBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SOTabBar.modulemap; sourceTree = "<group>"; };
+		499D639C0B0B7137DF44A72296B4AE0C /* Pods-Confu App UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Confu App UITests-umbrella.h"; sourceTree = "<group>"; };
+		4CD62B89510F3B3A7159A8312BA59BD7 /* SOTabBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SOTabBar-Info.plist"; sourceTree = "<group>"; };
+		55C80E478193A80590BE6BC428461624 /* Pods-Confu App UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UI.release.xcconfig"; sourceTree = "<group>"; };
+		574F6D4EF7E311674AFEA8952DD54617 /* Pods-Confu App UI-Confu App UIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Confu App UI-Confu App UIUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5E32A150437F5B6E63392C4A5B89AB2F /* Pods-Confu App UI-Confu App UIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Confu App UI-Confu App UIUITests.modulemap"; sourceTree = "<group>"; };
+		71B47B153AB2CCC5F9E375848FA42183 /* SOTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTabBar.swift; path = SOTabBar/Classes/SOTabBar.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C0FDAC99D2FB81EF9DA0EC9E9FE223D /* SOTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SOTabBar.framework; path = SOTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F629B5B1726BD47996C7437AC95DBDB /* Pods-Confu App UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Confu App UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92081D1DEB78BACA88A1376FE191F57E /* Pods-Confu App UI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UI-Info.plist"; sourceTree = "<group>"; };
+		9340CE2AF83A3C061A17C26F235094AF /* Pods-Confu App UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96042B11A5D2AD0F8A692DD1A2DC06A8 /* SOTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTabBarItem.swift; path = SOTabBar/Classes/SOTabBarItem.swift; sourceTree = "<group>"; };
+		96082D7E995E7AE38D2E9D64D5C72E33 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UI-Confu App UIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9760E5DF74E16BC6EB3673CAEF9D77E6 /* Pods-Confu App UI-Confu App UIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Confu App UI-Confu App UIUITests-dummy.m"; sourceTree = "<group>"; };
+		9C8102B811B761EC0C8974A45EB17BB4 /* Pods-Confu App UI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UI-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F0DC3EA3196305C54B7855C42B2644D /* Pods-Confu App UI-Confu App UIUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UI-Confu App UIUITests-Info.plist"; sourceTree = "<group>"; };
+		A2082C73C4CAD14006083410232CCD3D /* Pods-Confu App UI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Confu App UI.modulemap"; sourceTree = "<group>"; };
+		A3F4C0A45AC69BFBB5C159BB71B5A92F /* Pods-Confu App UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Confu App UITests-dummy.m"; sourceTree = "<group>"; };
+		A9D6E7C87515E27B1A7283FE6168BD41 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UI-Confu App UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC03E5BCCCF2214CF6591343ED738CF7 /* Pods-Confu App UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Confu App UITests.modulemap"; sourceTree = "<group>"; };
+		B16F0D26BB35E275460115E4BA98B862 /* Pods-Confu App UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UI.debug.xcconfig"; sourceTree = "<group>"; };
+		B9FE55F4F4F2D79AC1941DCBF9AF435C /* Pods-Confu App UI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Confu App UI-frameworks.sh"; sourceTree = "<group>"; };
+		C14416DA71C81A6999385551D222DDD9 /* SOTabBarSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTabBarSetting.swift; path = SOTabBar/Classes/SOTabBarSetting.swift; sourceTree = "<group>"; };
+		C53438BC4912647AEDDE6C62AB8DA27D /* SOTabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTabBar.release.xcconfig; sourceTree = "<group>"; };
+		DDABBE0DFF67B569251999C66A984CA5 /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Confu_App_UI_Confu_App_UIUITests.framework; path = "Pods-Confu App UI-Confu App UIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9738A5E49350C4B631FE54DDA5E8F2A /* Pods-Confu App UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UITests-Info.plist"; sourceTree = "<group>"; };
+		EAFC6DB37C7F8D9FF7D978BDFCA30F38 /* SOTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTabBarController.swift; path = SOTabBar/Classes/SOTabBarController.swift; sourceTree = "<group>"; };
+		F076FCAB1C220E59E7C4259E9034F942 /* Pods-Confu App UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Confu App UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0B0C4A446F6E6FE2D810990F86FE07A /* Pods-Confu App UI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Confu App UI-umbrella.h"; sourceTree = "<group>"; };
+		F3084C77B3EA4BB92A4179F17C59D2BF /* SOTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTabBar.debug.xcconfig; sourceTree = "<group>"; };
+		F68A5A0AA7D9DDFF8D43B9F6040B1F97 /* Pods-Confu App UI-Confu App UIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Confu App UI-Confu App UIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F767DC6C06B7BD725368E397331CE284 /* SOTabBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTabBar-umbrella.h"; sourceTree = "<group>"; };
+		FB986E2729465572A677B52A8A53B72D /* Pods-Confu App UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Confu App UITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671AD1E1E24A1FEC02C927D7BC43DAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A0E553E0ECBEFEF006C89B0442379F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A552AC028F2B72BE7E1C746800042EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888F385ABB6C1FD9206664E3082716BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A479EBB0F2D0CB1B8BC1A7925A2FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A10A8E187374C81CF001B66FF7D05EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E770A5B5B865C67DEF9DCCCFE51430ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD2FAF12D254A0E66F4F6F71F51F16C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		111ACDA859F77D72980FE6606F8D8B5A /* Pods-Confu App UITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC03E5BCCCF2214CF6591343ED738CF7 /* Pods-Confu App UITests.modulemap */,
+				7F629B5B1726BD47996C7437AC95DBDB /* Pods-Confu App UITests-acknowledgements.markdown */,
+				F076FCAB1C220E59E7C4259E9034F942 /* Pods-Confu App UITests-acknowledgements.plist */,
+				A3F4C0A45AC69BFBB5C159BB71B5A92F /* Pods-Confu App UITests-dummy.m */,
+				E9738A5E49350C4B631FE54DDA5E8F2A /* Pods-Confu App UITests-Info.plist */,
+				499D639C0B0B7137DF44A72296B4AE0C /* Pods-Confu App UITests-umbrella.h */,
+				9340CE2AF83A3C061A17C26F235094AF /* Pods-Confu App UITests.debug.xcconfig */,
+				FB986E2729465572A677B52A8A53B72D /* Pods-Confu App UITests.release.xcconfig */,
+			);
+			name = "Pods-Confu App UITests";
+			path = "Target Support Files/Pods-Confu App UITests";
+			sourceTree = "<group>";
+		};
+		49DC9C1B7A831D9D6FD5F886C29F6399 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4465BDB363CD3AF0819BD511259CADCB /* SOTabBar.modulemap */,
+				1625594AA552E0200BA1DC1FE9BB6791 /* SOTabBar-dummy.m */,
+				4CD62B89510F3B3A7159A8312BA59BD7 /* SOTabBar-Info.plist */,
+				3E5CDA6760406CA43F46A04EEEE6EF09 /* SOTabBar-prefix.pch */,
+				F767DC6C06B7BD725368E397331CE284 /* SOTabBar-umbrella.h */,
+				F3084C77B3EA4BB92A4179F17C59D2BF /* SOTabBar.debug.xcconfig */,
+				C53438BC4912647AEDDE6C62AB8DA27D /* SOTabBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SOTabBar";
+			sourceTree = "<group>";
+		};
+		534ABC433CBA4C3E0CEE1FD17570A0ED /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC18331EF7FCD790B5E91CB01A2A9CC3 /* Pods-Confu App UI */,
+				5883945EF8166AD776C2F9E5D537FCA5 /* Pods-Confu App UI-Confu App UIUITests */,
+				111ACDA859F77D72980FE6606F8D8B5A /* Pods-Confu App UITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5883945EF8166AD776C2F9E5D537FCA5 /* Pods-Confu App UI-Confu App UIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E32A150437F5B6E63392C4A5B89AB2F /* Pods-Confu App UI-Confu App UIUITests.modulemap */,
+				F68A5A0AA7D9DDFF8D43B9F6040B1F97 /* Pods-Confu App UI-Confu App UIUITests-acknowledgements.markdown */,
+				059D8C97EA79619123465B27F832067D /* Pods-Confu App UI-Confu App UIUITests-acknowledgements.plist */,
+				9760E5DF74E16BC6EB3673CAEF9D77E6 /* Pods-Confu App UI-Confu App UIUITests-dummy.m */,
+				574F6D4EF7E311674AFEA8952DD54617 /* Pods-Confu App UI-Confu App UIUITests-frameworks.sh */,
+				9F0DC3EA3196305C54B7855C42B2644D /* Pods-Confu App UI-Confu App UIUITests-Info.plist */,
+				1C94667B70A5935515355C50CEA102FE /* Pods-Confu App UI-Confu App UIUITests-umbrella.h */,
+				A9D6E7C87515E27B1A7283FE6168BD41 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */,
+				96082D7E995E7AE38D2E9D64D5C72E33 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */,
+			);
+			name = "Pods-Confu App UI-Confu App UIUITests";
+			path = "Target Support Files/Pods-Confu App UI-Confu App UIUITests";
+			sourceTree = "<group>";
+		};
+		751921BE519BFF439F4BA89BC7222F01 /* SOTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				71B47B153AB2CCC5F9E375848FA42183 /* SOTabBar.swift */,
+				EAFC6DB37C7F8D9FF7D978BDFCA30F38 /* SOTabBarController.swift */,
+				96042B11A5D2AD0F8A692DD1A2DC06A8 /* SOTabBarItem.swift */,
+				C14416DA71C81A6999385551D222DDD9 /* SOTabBarSetting.swift */,
+				49DC9C1B7A831D9D6FD5F886C29F6399 /* Support Files */,
+			);
+			name = SOTabBar;
+			path = SOTabBar;
+			sourceTree = "<group>";
+		};
+		93514A8B346924EADDB820B80E1762C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				751921BE519BFF439F4BA89BC7222F01 /* SOTabBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC18331EF7FCD790B5E91CB01A2A9CC3 /* Pods-Confu App UI */ = {
+			isa = PBXGroup;
+			children = (
+				A2082C73C4CAD14006083410232CCD3D /* Pods-Confu App UI.modulemap */,
+				15A3E4B0A39E41B083F6FB60610D3B05 /* Pods-Confu App UI-acknowledgements.markdown */,
+				9C8102B811B761EC0C8974A45EB17BB4 /* Pods-Confu App UI-acknowledgements.plist */,
+				0FC5CF74047AB6D49FA385AE86D3DBB3 /* Pods-Confu App UI-dummy.m */,
+				B9FE55F4F4F2D79AC1941DCBF9AF435C /* Pods-Confu App UI-frameworks.sh */,
+				92081D1DEB78BACA88A1376FE191F57E /* Pods-Confu App UI-Info.plist */,
+				F0B0C4A446F6E6FE2D810990F86FE07A /* Pods-Confu App UI-umbrella.h */,
+				B16F0D26BB35E275460115E4BA98B862 /* Pods-Confu App UI.debug.xcconfig */,
+				55C80E478193A80590BE6BC428461624 /* Pods-Confu App UI.release.xcconfig */,
+			);
+			name = "Pods-Confu App UI";
+			path = "Target Support Files/Pods-Confu App UI";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				93514A8B346924EADDB820B80E1762C9 /* Pods */,
+				EDA8DE11FF1597A0B356850CE5C1535B /* Products */,
+				534ABC433CBA4C3E0CEE1FD17570A0ED /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA8DE11FF1597A0B356850CE5C1535B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19BAE998A18FE771F138B0C632E86486 /* Pods_Confu_App_UI.framework */,
+				DDABBE0DFF67B569251999C66A984CA5 /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */,
+				3B19632A0E9B516F7751151C858C249F /* Pods_Confu_App_UITests.framework */,
+				7C0FDAC99D2FB81EF9DA0EC9E9FE223D /* SOTabBar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CCA915CAC6CB344F3F36BFE6DDB5B52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF04AB5D939C35F58485BA809738F02 /* SOTabBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768CFFCBA32EBD7B21E31C61952DB4CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6845F72A6CBEF992CB360799573E60DB /* Pods-Confu App UI-Confu App UIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A29014413F988DA121F30555868210F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BDE840BA60C4F9297B478CDBE60790 /* Pods-Confu App UI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CD66B95CA463D6C316F1A83BC47E04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979C89C128A39DF871A845F8B86CCD7F /* Pods-Confu App UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05A7B2393F8F752782D1E2D0D458445A /* Pods-Confu App UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B1BA0C843913DFEB16DE6D7705CE67 /* Build configuration list for PBXNativeTarget "Pods-Confu App UI" */;
+			buildPhases = (
+				9A29014413F988DA121F30555868210F /* Headers */,
+				52BF11B4F24F0D472A30A6C050ECBE8D /* Sources */,
+				70A479EBB0F2D0CB1B8BC1A7925A2FE6 /* Frameworks */,
+				A55CC40F3C4D81470EC9BD41AF7C7D90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D4EDF1315BA51B4D823A1E1F23954D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Confu App UI";
+			productName = "Pods-Confu App UI";
+			productReference = 19BAE998A18FE771F138B0C632E86486 /* Pods_Confu_App_UI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F69C74B5FDE250FDAC3F628C65A3700 /* Pods-Confu App UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA987D34209FADB300DE4242ED752736 /* Build configuration list for PBXNativeTarget "Pods-Confu App UITests" */;
+			buildPhases = (
+				B4CD66B95CA463D6C316F1A83BC47E04 /* Headers */,
+				A57D71D6E58ED7A6BF510A5AD267C00F /* Sources */,
+				E770A5B5B865C67DEF9DCCCFE51430ED /* Frameworks */,
+				EB1AFCC5705B25E2DA7BF70A87167C6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C4A5F31C85965B5F85CA3A0B4A9AB76 /* PBXTargetDependency */,
+			);
+			name = "Pods-Confu App UITests";
+			productName = "Pods-Confu App UITests";
+			productReference = 3B19632A0E9B516F7751151C858C249F /* Pods_Confu_App_UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEBC7CDE14CE368DE44644B7A27389AA /* Pods-Confu App UI-Confu App UIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75404CF08A43BF66B8AA0899FABC1E59 /* Build configuration list for PBXNativeTarget "Pods-Confu App UI-Confu App UIUITests" */;
+			buildPhases = (
+				768CFFCBA32EBD7B21E31C61952DB4CA /* Headers */,
+				D1CE9F57FC4E8B6C93A617A78C731C39 /* Sources */,
+				671AD1E1E24A1FEC02C927D7BC43DAE4 /* Frameworks */,
+				AE6B5E17147EC64067CD42765179A2D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0553E830BEA11A4227AC71C901BED939 /* PBXTargetDependency */,
+			);
+			name = "Pods-Confu App UI-Confu App UIUITests";
+			productName = "Pods-Confu App UI-Confu App UIUITests";
+			productReference = DDABBE0DFF67B569251999C66A984CA5 /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6ACF3335315E86A27831CC929125D4C /* SOTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B4B5FF9D633641AE57ADEA14293D33D /* Build configuration list for PBXNativeTarget "SOTabBar" */;
+			buildPhases = (
+				1CCA915CAC6CB344F3F36BFE6DDB5B52 /* Headers */,
+				511C170196C57390D4C4B19883A795C1 /* Sources */,
+				6A552AC028F2B72BE7E1C746800042EE /* Frameworks */,
+				6678EDA1161C5D20EE9EAB6CC76A86B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOTabBar;
+			productName = SOTabBar;
+			productReference = 7C0FDAC99D2FB81EF9DA0EC9E9FE223D /* SOTabBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EDA8DE11FF1597A0B356850CE5C1535B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05A7B2393F8F752782D1E2D0D458445A /* Pods-Confu App UI */,
+				AEBC7CDE14CE368DE44644B7A27389AA /* Pods-Confu App UI-Confu App UIUITests */,
+				5F69C74B5FDE250FDAC3F628C65A3700 /* Pods-Confu App UITests */,
+				C6ACF3335315E86A27831CC929125D4C /* SOTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6678EDA1161C5D20EE9EAB6CC76A86B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55CC40F3C4D81470EC9BD41AF7C7D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6B5E17147EC64067CD42765179A2D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1AFCC5705B25E2DA7BF70A87167C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		511C170196C57390D4C4B19883A795C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD0C396095AF25E6CEE426784A006C2 /* SOTabBar-dummy.m in Sources */,
+				A031452B2FB26249667B3042DA783490 /* SOTabBar.swift in Sources */,
+				4A61BE15BD27E7644100BFE4C3CFB9BD /* SOTabBarController.swift in Sources */,
+				DBDDA79E94F0FF32DD9F631B3222EFFE /* SOTabBarItem.swift in Sources */,
+				2084165416245DDBF15CA6B8871D4FE0 /* SOTabBarSetting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BF11B4F24F0D472A30A6C050ECBE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596BF334B31BC889E73E1B639EB88398 /* Pods-Confu App UI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57D71D6E58ED7A6BF510A5AD267C00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346BA6077FD1182437CFDEA9F26151CC /* Pods-Confu App UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1CE9F57FC4E8B6C93A617A78C731C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE2BAEC30EA246DD50DA9FF85C0851D /* Pods-Confu App UI-Confu App UIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0553E830BEA11A4227AC71C901BED939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOTabBar;
+			target = C6ACF3335315E86A27831CC929125D4C /* SOTabBar */;
+			targetProxy = 4434E60F75F8267E9380BBF919D9ECA7 /* PBXContainerItemProxy */;
+		};
+		4C4A5F31C85965B5F85CA3A0B4A9AB76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Confu App UI";
+			target = 05A7B2393F8F752782D1E2D0D458445A /* Pods-Confu App UI */;
+			targetProxy = FB7392374AAA31C90D9EF6A6B5AA18B4 /* PBXContainerItemProxy */;
+		};
+		4D4EDF1315BA51B4D823A1E1F23954D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOTabBar;
+			target = C6ACF3335315E86A27831CC929125D4C /* SOTabBar */;
+			targetProxy = 114F4D43E266954E700DD3B51E01BDB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		288E4510B2E67915209EC24CFDAD4279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D6E7C87515E27B1A7283FE6168BD41 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3064AE3885594CCCD990A1C72C64B687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB986E2729465572A677B52A8A53B72D /* Pods-Confu App UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DC2C8DA64A4EA0D6DA7ABA39FF49F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3084C77B3EA4BB92A4179F17C59D2BF /* SOTabBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SOTabBar/SOTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTabBar/SOTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SOTabBar/SOTabBar.modulemap";
+				PRODUCT_MODULE_NAME = SOTabBar;
+				PRODUCT_NAME = SOTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9826B36DB390C82DC670BD4AAC38C3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16F0D26BB35E275460115E4BA98B862 /* Pods-Confu App UI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B8E104C9277CAA2F67EEBADB96EE1B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9340CE2AF83A3C061A17C26F235094AF /* Pods-Confu App UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8D88D404F7AB781E23085D0BF07DEF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53438BC4912647AEDDE6C62AB8DA27D /* SOTabBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SOTabBar/SOTabBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTabBar/SOTabBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SOTabBar/SOTabBar.modulemap";
+				PRODUCT_MODULE_NAME = SOTabBar;
+				PRODUCT_NAME = SOTabBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF8FD805AEDFC40CC5E8F7AEEE1A71E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C80E478193A80590BE6BC428461624 /* Pods-Confu App UI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F00A17135B158A39FEC34118975F0B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96082D7E995E7AE38D2E9D64D5C72E33 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
+				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B4B5FF9D633641AE57ADEA14293D33D /* Build configuration list for PBXNativeTarget "SOTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC2C8DA64A4EA0D6DA7ABA39FF49F7B /* Debug */,
+				C8D88D404F7AB781E23085D0BF07DEF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75404CF08A43BF66B8AA0899FABC1E59 /* Build configuration list for PBXNativeTarget "Pods-Confu App UI-Confu App UIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288E4510B2E67915209EC24CFDAD4279 /* Debug */,
+				F00A17135B158A39FEC34118975F0B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B1BA0C843913DFEB16DE6D7705CE67 /* Build configuration list for PBXNativeTarget "Pods-Confu App UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9826B36DB390C82DC670BD4AAC38C3E6 /* Debug */,
+				CF8FD805AEDFC40CC5E8F7AEEE1A71E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA987D34209FADB300DE4242ED752736 /* Build configuration list for PBXNativeTarget "Pods-Confu App UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E104C9277CAA2F67EEBADB96EE1B78 /* Debug */,
+				3064AE3885594CCCD990A1C72C64B687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
