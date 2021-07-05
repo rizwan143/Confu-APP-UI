@@ -16,9 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let tabBarController = TabbarController()
-        
-        window?.rootViewController = tabBarController
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let swipingController = SwipingController(collectionViewLayout: layout)
+//        let tabBarController = WalkthroughVC()
+        //TabbarController()
+        window?.rootViewController = swipingController
+            //tabBarController
         window?.makeKeyAndVisible()
         
         return true

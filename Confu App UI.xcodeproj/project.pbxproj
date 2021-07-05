@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		2C421135268F503D00D5F235 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112D268F503D00D5F235 /* MyCell.swift */; };
 		2C421136268F503D00D5F235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112E268F503D00D5F235 /* AppDelegate.swift */; };
 		2C421137268F503D00D5F235 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42112F268F503D00D5F235 /* CollectionViewVC.swift */; };
+		2C42116126939BD200D5F235 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42115C26939BD100D5F235 /* SwipingController.swift */; };
+		2C42116226939BD200D5F235 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42115D26939BD100D5F235 /* PageCell.swift */; };
+		2C42116426939BD200D5F235 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42115F26939BD200D5F235 /* Page.swift */; };
+		2C42116526939BD200D5F235 /* SwipingController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42116026939BD200D5F235 /* SwipingController+UICollectionView.swift */; };
 		6659CFC9C7985FB8CE11185B /* Pods_Confu_App_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */; };
 		7694216DD7BE156AB00FE066 /* Pods_Confu_App_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */; };
 		9CF585EDCC4FE55BE56FD7EB /* Pods_Confu_App_UI_Confu_App_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */; };
@@ -59,6 +63,10 @@
 		2C42112D268F503D00D5F235 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		2C42112E268F503D00D5F235 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C42112F268F503D00D5F235 /* CollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
+		2C42115C26939BD100D5F235 /* SwipingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		2C42115D26939BD100D5F235 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		2C42115F26939BD200D5F235 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		2C42116026939BD200D5F235 /* SwipingController+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwipingController+UICollectionView.swift"; sourceTree = "<group>"; };
 		50C6AA2F390C8FBC3B7AD967 /* Pods-Confu App UI-Confu App UIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI-Confu App UIUITests.release.xcconfig"; path = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DCDCFFD1C701C941AC2144 /* Pods-Confu App UI-Confu App UIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI-Confu App UIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UI-Confu App UIUITests/Pods-Confu App UI-Confu App UIUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 		2C4210AD268F460A00D5F235 /* Confu App UI */ = {
 			isa = PBXGroup;
 			children = (
+				2C42115126937B8300D5F235 /* Swipping Controller */,
 				2C4210B9268F460F00D5F235 /* LaunchScreen.storyboard */,
 				2C4210BC268F460F00D5F235 /* Info.plist */,
 				2C42112E268F503D00D5F235 /* AppDelegate.swift */,
@@ -156,6 +165,17 @@
 			path = "Confu App UIUITests";
 			sourceTree = "<group>";
 		};
+		2C42115126937B8300D5F235 /* Swipping Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C42115F26939BD200D5F235 /* Page.swift */,
+				2C42115D26939BD100D5F235 /* PageCell.swift */,
+				2C42115C26939BD100D5F235 /* SwipingController.swift */,
+				2C42116026939BD200D5F235 /* SwipingController+UICollectionView.swift */,
+			);
+			path = "Swipping Controller";
+			sourceTree = "<group>";
+		};
 		3DC02E0895DF8EF3D575B838 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +186,6 @@
 				E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */,
 				75D28E1276D7FD4B202143D5 /* Pods-Confu App UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -420,9 +439,13 @@
 			files = (
 				2C421136268F503D00D5F235 /* AppDelegate.swift in Sources */,
 				2C421132268F503D00D5F235 /* TableViewVC.swift in Sources */,
+				2C42116426939BD200D5F235 /* Page.swift in Sources */,
+				2C42116126939BD200D5F235 /* SwipingController.swift in Sources */,
 				2C421135268F503D00D5F235 /* MyCell.swift in Sources */,
 				2C421133268F503D00D5F235 /* TabbarController.swift in Sources */,
 				2C421137268F503D00D5F235 /* CollectionViewVC.swift in Sources */,
+				2C42116226939BD200D5F235 /* PageCell.swift in Sources */,
+				2C42116526939BD200D5F235 /* SwipingController+UICollectionView.swift in Sources */,
 				2C421134268F503D00D5F235 /* ViewController.swift in Sources */,
 				2C421130268F503D00D5F235 /* TableViewCell.swift in Sources */,
 			);
