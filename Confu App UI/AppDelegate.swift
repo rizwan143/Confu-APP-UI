@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let swipingController = SwipingController(collectionViewLayout: layout)
 //        let tabBarController = WalkthroughVC()
         //TabbarController()
-        window?.rootViewController = swipingController
+        
+        window?.rootViewController = UINavigationController(rootViewController: swipingController)
             //tabBarController
         window?.makeKeyAndVisible()
         

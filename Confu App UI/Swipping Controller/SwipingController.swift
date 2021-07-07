@@ -62,8 +62,10 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     
     // MARK: Next Button Action
     @objc private func handleNext() {
-        let tabBarController =  TabbarController()
-        appDelegate.window?.rootViewController = tabBarController
+        let homeViewController = PhoneNumberVC()
+            navigationController?.pushViewController(homeViewController, animated: true)
+//        let tabBarController =  TabbarController()
+//        appDelegate.window?.rootViewController = tabBarController
 
     }
   
@@ -90,7 +92,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         
         pageControl.currentPage = Int(x / view.frame.width)
         
-        if pageControl.currentPage == pages.count
+        if pageControl.currentPage == pages.count - 1
         {
             nextButton.setTitle("START", for: .normal)
         }
@@ -103,12 +105,10 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.isHidden = true
         setupBottomControls()
-        
         collectionView?.backgroundColor = .white
         collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
-        
         collectionView?.isPagingEnabled = true
       
     }

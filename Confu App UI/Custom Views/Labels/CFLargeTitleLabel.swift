@@ -31,7 +31,7 @@ class CFLargeTitleLabel: UILabel {
     private func setup() {
         translatesAutoresizingMaskIntoConstraints = false
         
-        font = RobotoFont.black.size(30)
+        font = RobotoFont.black.size(22)
         adjustsFontSizeToFitWidth = false
         minimumScaleFactor = 0.85
         lineBreakMode = .byTruncatingTail

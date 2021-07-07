@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1DEED826960BF500EF467D /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1DEED726960BF500EF467D /* CheckBoxButton.swift */; };
 		2C4210BB268F460F00D5F235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4210B9268F460F00D5F235 /* LaunchScreen.storyboard */; };
 		2C4210C6268F461000D5F235 /* Confu_App_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4210C5268F461000D5F235 /* Confu_App_UITests.swift */; };
 		2C4210D1268F461000D5F235 /* Confu_App_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4210D0268F461000D5F235 /* Confu_App_UIUITests.swift */; };
@@ -157,6 +158,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1DEED726960BF500EF467D /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		2C4210AB268F460A00D5F235 /* Confu App UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confu App UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4210BA268F460F00D5F235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4210BC268F460F00D5F235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 				2CE9F0D12694924B00FE2151 /* CFIconButton.swift */,
 				2CE9F0D22694924B00FE2151 /* CFOutlineButton.swift */,
 				2CE9F0D32694924B00FE2151 /* CFPrimaryButton.swift */,
+				2C1DEED726960BF500EF467D /* CheckBoxButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1057,6 +1060,7 @@
 				2CE9F0F22694924C00FE2151 /* PhoneNumberVC.swift in Sources */,
 				2CE9F1202694924C00FE2151 /* BestPracticesView.swift in Sources */,
 				2CE9F0F02694924B00FE2151 /* PhoneNumberView.swift in Sources */,
+				2C1DEED826960BF500EF467D /* CheckBoxButton.swift in Sources */,
 				2CE9F0FD2694924C00FE2151 /* CreateProfileView.swift in Sources */,
 				2CE9F1A22694927200FE2151 /* Captions.swift in Sources */,
 				2CE9F11F2694924C00FE2151 /* BestPracticeSlide.swift in Sources */,

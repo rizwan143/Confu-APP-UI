@@ -9,11 +9,14 @@
 import Foundation
 
 enum StaticLabels: String {
-    case pnViewLargeText = "What is your phone number?"
-    case pnViewBodyText = "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual."
+    case pnViewLargeText = "Getting Started"
+    case pnViewBodyText = "Create an account to continue!"
+    case pnViewPhoneText = "Phone Number"
+    case pnViewCountryText = "Country"
+    case pnViewTermsandCondtionText = "By creating an account, you agree to our Terms & Condtions"
     
-    case vpNumberViewLargeText = "Verify your phone number."
-    case vpNumberViewBodyText = "We have sent the one time password on your phone number, please check your phone number."
+    case vpNumberViewLargeText = "Verify Code Your Phone"
+    case vpNumberViewBodyText = "Please type the verification code sent to +923136922891"
     
     case cpViewLargeText = "Personal info"
     case cpViewBodyText = "This information will be visible to your Confu contact list and in your profile."
