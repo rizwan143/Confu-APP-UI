@@ -71,9 +71,10 @@ class OtpVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func actionButtonTapped() {
-        
-                let tabBarController =  TabbarController()
-                appDelegate.window?.rootViewController = tabBarController
+        let otpViewController = CreateProfileVC()
+            navigationController?.pushViewController(otpViewController, animated: true)
+//                let tabBarController =  TabbarController()
+//                appDelegate.window?.rootViewController = tabBarController
 
       //  otpVM.verifyOtp(with: verificationID, and: otpView.otpTextField.getOTP())
     }

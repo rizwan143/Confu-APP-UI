@@ -8,17 +8,17 @@
 
 import UIKit
 
-//class ProfileImagePickerDelegate: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-//    var parentController: ProfileImagePresenting?
-//    
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        picker.dismiss(animated: true, completion: nil)
-//        
-//        guard let image = info[.editedImage] as? UIImage else {
-//            print("No image found")
-//            return
-//        }
-//        
-//        parentController?.picked(image: image)
-//    }
-//}
+class ProfileImagePickerDelegate: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    var parentController: ProfileImagePresenting?
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        
+        parentController?.picked(image: image)
+    }
+}

@@ -71,8 +71,8 @@ import Combine
 //    }
 
     @objc func actionButtonTapped() {
-        let homeViewController = OtpVC()
-            navigationController?.pushViewController(homeViewController, animated: true)
+        let otpViewController = OtpVC()
+            navigationController?.pushViewController(otpViewController, animated: true)
 //        if isPhoneNumberValid {
 //            self.phoneNumberView.tfPhoneNumber.resignFirstResponder()
 //            phoneNumberVM.signUp()

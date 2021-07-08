@@ -11,7 +11,7 @@ import MaterialComponents
 
 class CFFloatingTextField: UIView {
 
-    var textField = MDCOutlinedTextField()
+    var textField = MDCUnderlinedTextField()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -18,7 +18,7 @@ enum StaticLabels: String {
     case vpNumberViewLargeText = "Verify Code Your Phone"
     case vpNumberViewBodyText = "Please type the verification code sent to +923136922891"
     
-    case cpViewLargeText = "Personal info"
+    case cpViewLargeText = "Create Your Profile "
     case cpViewBodyText = "This information will be visible to your Confu contact list and in your profile."
     
     case emptyTableViewContent = "No, upcoming conference"
