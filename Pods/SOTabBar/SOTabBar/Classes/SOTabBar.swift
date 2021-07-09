@@ -99,7 +99,10 @@ public class SOTabBar: UIView {
         
         innerCircleView.frame.size = SOTabBarSetting.tabBarCircleSize
         innerCircleView.layer.cornerRadius = SOTabBarSetting.tabBarCircleSize.width / 2
-        
+        innerCircleView.layer.borderWidth = 8
+        innerCircleView.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+//        outerCircleView.layer.borderWidth = 5
+//        outerCircleView.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         outerCircleView.layer.cornerRadius = (innerCircleView.frame.size.height - 10) / 2
         
         stackView.frame = self.bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
@@ -130,7 +133,7 @@ public class SOTabBar: UIView {
         guard let touchArea = touches.first?.location(in: self).x else {
             return
         }
-        let index = Int(floor(touchArea / tabWidth))
+        let index = Int(floor(touchArea / tabWidth ))
         didSelectTab(index: index)
     }
     
@@ -179,12 +182,13 @@ public class SOTabBar: UIView {
 private extension SOTabBar {
 
     var tabWidth: CGFloat {
-        return UIScreen.main.bounds.width / CGFloat(viewControllers.count)
+        let width = UIScreen.main.bounds.width - 40
+        return width / CGFloat(viewControllers.count)
     }
 
     var circlePath: CGPath {
-        let startPoint_X = CGFloat(previousSelectedIndex) * CGFloat(tabWidth) - (tabWidth * 0.5)
-        let endPoint_X = CGFloat(selectedIndex ) * CGFloat(tabWidth) - (tabWidth * 0.5)
+        let startPoint_X = CGFloat(previousSelectedIndex) * CGFloat(tabWidth ) - (tabWidth * 0.5)
+        let endPoint_X = CGFloat(selectedIndex ) * CGFloat(tabWidth ) - (tabWidth * 0.5)
         let y = SOTabBarSetting.tabBarHeight * 0.1
         let path = UIBezierPath()
         path.move(to: CGPoint(x: startPoint_X, y: y))

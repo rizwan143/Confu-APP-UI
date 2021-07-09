@@ -138,6 +138,8 @@
 		6659CFC9C7985FB8CE11185B /* Pods_Confu_App_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */; };
 		7694216DD7BE156AB00FE066 /* Pods_Confu_App_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5337A99F2941A6FFDF323968 /* Pods_Confu_App_UI.framework */; };
 		9CF585EDCC4FE55BE56FD7EB /* Pods_Confu_App_UI_Confu_App_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */; };
+		DB5B98AB269877F4004A88AE /* CallHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5B98AA269877F4004A88AE /* CallHistoryVC.swift */; };
+		DB5B98AD2698781B004A88AE /* CallHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5B98AC2698781B004A88AE /* CallHistoryView.swift */; };
 		DBF472482696DFDB0098F0A6 /* ProfileImagePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF472472696DFDB0098F0A6 /* ProfileImagePresenting.swift */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +304,8 @@
 		9D542C710C3F4D6615FA2BF0 /* Pods_Confu_App_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confu_App_UI_Confu_App_UIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8E1BFA2598D7B87B7A4E69 /* Pods-Confu App UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.debug.xcconfig"; sourceTree = "<group>"; };
+		DB5B98AA269877F4004A88AE /* CallHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryVC.swift; sourceTree = "<group>"; };
+		DB5B98AC2698781B004A88AE /* CallHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryView.swift; sourceTree = "<group>"; };
 		DBF472472696DFDB0098F0A6 /* ProfileImagePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImagePresenting.swift; sourceTree = "<group>"; };
 		E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UITests.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -359,6 +363,7 @@
 		2C4210AD268F460A00D5F235 /* Confu App UI */ = {
 			isa = PBXGroup;
 			children = (
+				DB5B98A92698769C004A88AE /* Call History */,
 				2CE9F15B2694927200FE2151 /* Constants */,
 				2CE9F1242694927100FE2151 /* Fonts */,
 				2CE9F0AC2694924A00FE2151 /* Authentication */,
@@ -725,6 +730,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB5B98A92698769C004A88AE /* Call History */ = {
+			isa = PBXGroup;
+			children = (
+				DB5B98AA269877F4004A88AE /* CallHistoryVC.swift */,
+				DB5B98AC2698781B004A88AE /* CallHistoryView.swift */,
+			);
+			path = "Call History";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1045,11 +1059,13 @@
 				2CE9F1172694924C00FE2151 /* CFTabBarController.swift in Sources */,
 				DBF472482696DFDB0098F0A6 /* ProfileImagePresenting.swift in Sources */,
 				2CE9F11B2694924C00FE2151 /* CFAvatarImageView.swift in Sources */,
+				DB5B98AD2698781B004A88AE /* CallHistoryView.swift in Sources */,
 				2CE9F1062694924C00FE2151 /* CFShape.swift in Sources */,
 				2CE9F1092694924C00FE2151 /* CFButton.swift in Sources */,
 				2CE9F1A32694927200FE2151 /* QueueLabels.swift in Sources */,
 				2CE9F1132694924C00FE2151 /* CFLabel.swift in Sources */,
 				2CE9F0F72694924C00FE2151 /* CallMemberCell.swift in Sources */,
+				DB5B98AB269877F4004A88AE /* CallHistoryVC.swift in Sources */,
 				2CE9F1A12694927200FE2151 /* Colors.swift in Sources */,
 				2CE9F1002694924C00FE2151 /* Loader.swift in Sources */,
 				2C421133268F503D00D5F235 /* TabbarController.swift in Sources */,

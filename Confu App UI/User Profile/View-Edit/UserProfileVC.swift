@@ -8,10 +8,8 @@
 
 import UIKit
 
-class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImagePresenting {
-    func picked(image: UIImage) {
-        print(image)
-    }
+class UserProfileVC: UIViewController, UIGestureRecognizerDelegate {
+  
     
     let userProfileView = UserProfileView()
 
@@ -24,9 +22,9 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
     var profileImagePickerDelegate = ProfileImagePickerDelegate()
 
     var user = [String: Any]()
-
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
   //  var localUser: LocalUser?
-
+    var selectedImage : UIImage?
     var tap: UITapGestureRecognizer! {
         UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
     }
@@ -40,8 +38,13 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        configureNavigationBar(backgroundColor: UIColor().backgroundColor, tintColor: UIColor().titleColor)
+        if selectedImage != nil
+        {
+            userProfileView.ivAvatarImage.image = selectedImage
+        }
+       
+  //     configureNavigationBar(backgroundColor: UIColor().backgroundColor, tintColor: UIColor().titleColor)
+        
 //        hideKeyboard()
 //
 //
@@ -55,6 +58,9 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 //        dataSource.delegate = self
         profileImagePickerDelegate.parentController = self
     //    setupListener()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -88,20 +94,25 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 
 
     @objc func selectProfileImage() {
-//        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//
-//        let takePhotoAction = UIAlertAction(title: "Take photo", style: .default, handler: selectPhoto)
-//        let choosePhotoAction = UIAlertAction(title: "Choose photo", style: .default, handler: selectPhoto)
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//
-//        actionSheet.addAction(takePhotoAction)
-//        actionSheet.addAction(choosePhotoAction)
-//        actionSheet.addAction(cancelAction)
-//
-//        present(actionSheet, animated: true)
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+        let takePhotoAction = UIAlertAction(title: "Take photo", style: .default, handler: selectPhoto)
+        let choosePhotoAction = UIAlertAction(title: "Choose photo", style: .default, handler: selectPhoto)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+        actionSheet.addAction(takePhotoAction)
+        actionSheet.addAction(choosePhotoAction)
+        actionSheet.addAction(cancelAction)
+
+        present(actionSheet, animated: true)
     }
+    
+    
 
     @objc func actionButtonTapped() {
+        let tabBarController =  TabbarController()
+        appDelegate.window?.rootViewController = tabBarController
+
 //        let validate = dataSource.validateTextFields(from: userProfileView)
 //        if  validate.success {
 //            print(validate.success)
@@ -117,7 +128,7 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
             userProfileView.buttonBottomConstraint.isActive = false
             UIView.animate(withDuration: 0.3, animations: {
 
-                self.userProfileView.buttonBottomConstraint = self.userProfileView.actionButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -keyboardSize.height - 20)
+//                self.userProfileView.buttonBottomConstraint = self.userProfileView.actionButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -keyboardSize.height - 20)
                 NSLayoutConstraint.activate([
                     self.userProfileView.buttonBottomConstraint
                 ])
@@ -130,7 +141,7 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
         userProfileView.buttonBottomConstraint.isActive = false
         UIView.animate(withDuration: 0.3, animations: {
 
-            self.userProfileView.buttonBottomConstraint = self.userProfileView.actionButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
+//            self.userProfileView.buttonBottomConstraint = self.userProfileView.actionButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
             NSLayoutConstraint.activate([
                 self.userProfileView.buttonBottomConstraint
             ])
@@ -142,7 +153,7 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 }
 
 
-//extension UserProfileVC {
+extension UserProfileVC {
 //
 //    func setupListener() {
 //        updateUserProfileVM.localUser.bind { [weak self] in
@@ -162,21 +173,21 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 //    }
 //
 //
-//    private func selectPhoto(action: UIAlertAction) {
-//        imagePickerController.allowsEditing = true
-//        imagePickerController.delegate = profileImagePickerDelegate
-//
-//        switch action.title! {
-//        case "Take photo":
-//            imagePickerController.sourceType = .camera
-//        case "Choose photo":
-//            imagePickerController.sourceType = .photoLibrary
-//        default:
-//            print("No photo source")
-//        }
-//
-//        present(imagePickerController, animated: true)
-//    }
+    private func selectPhoto(action: UIAlertAction) {
+        imagePickerController.allowsEditing = true
+        imagePickerController.delegate = profileImagePickerDelegate
+
+        switch action.title! {
+        case "Take photo":
+            imagePickerController.sourceType = .camera
+        case "Choose photo":
+            imagePickerController.sourceType = .photoLibrary
+        default:
+            print("No photo source")
+        }
+
+        present(imagePickerController, animated: true)
+    }
 //
 //    func setKeyboarObserver() {
 //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -193,13 +204,13 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate, ProfileImage
 //        let item = UserModel.fromDictionary(user)
 //        userProfileView.avatarImageView.downloadImage(of: item)
 //    }
-//}
+}
 
-//extension UserProfileVC: ProfileImagePresenting {
-//    func picked(image: UIImage) {
-//        userProfileView.avatarImageView.image = image
-//    }
-//}
+extension UserProfileVC: ProfileImagePresenting {
+    func picked(image: UIImage) {
+        userProfileView.ivAvatarImage.image = image
+    }
+}
 //
 //extension UserProfileVC: KeyboardProtocol {
 //    func hideKeyboard() {

@@ -17,7 +17,7 @@ class OTPView: UIView {
             otpVC?.navigationController?.interactivePopGestureRecognizer?.delegate = otpVC
             
             btnContinue.addTarget(otpVC, action: #selector(OtpVC.actionButtonTapped), for: .touchUpInside)
-            btnResendCode.addTarget(otpVC, action: #selector(OtpVC.btnResendCode), for: .touchUpInside)
+            btnCodeTimer.addTarget(otpVC, action: #selector(OtpVC.btnResendCode), for: .touchUpInside)
         }
     }
     
@@ -25,11 +25,11 @@ class OTPView: UIView {
     
     let lblBody = CFBodyLabel(text: StaticLabels.vpNumberViewBodyText.rawValue)
     let lblPhoneNumber = CFTitleLabel(fontSize: 13, textColor: .black)
-    let btnResendCode = UIButton()
+    let btnCodeTimer = UIButton()
     
     let otpTextField = CFOtpStack()
     
-    let btnContinue = CFPrimaryButton(title: "Continue", backgroundColor: .white, titleColor: .black)
+    let btnContinue = CFPrimaryButton(title: "VERIFY", backgroundColor: .black, titleColor: .white)
     
     let padding: CGFloat = 20
     let secondaryPadding: CGFloat = 40
@@ -101,19 +101,19 @@ class OTPView: UIView {
     }
     
     private func setupAboveOTPTitle() {
-        addSubview(btnResendCode)
-        btnResendCode.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(btnCodeTimer)
+        btnCodeTimer.translatesAutoresizingMaskIntoConstraints = false
         
-        btnResendCode.setTitle("", for: .normal)
-        btnResendCode.setTitleColor(.black, for: .normal)
+        btnCodeTimer.setTitle("00.24", for: .normal)
+        btnCodeTimer.setTitleColor(.black, for: .normal)
         //UIColor().primary
-        btnResendCode.setTitleColor(.black, for: .disabled)
+        btnCodeTimer.setTitleColor(.black, for: .disabled)
         //UIColor().subTitleColor
-        btnResendCode.titleLabel?.font = RobotoFont.medium.size(13)
+        btnCodeTimer.titleLabel?.font = RobotoFont.regular.size(13)
         
         NSLayoutConstraint.activate([
-            btnResendCode.bottomAnchor.constraint(equalTo: otpTextField.topAnchor, constant: -padding),
-            btnResendCode.trailingAnchor.constraint(equalTo: otpTextField.trailingAnchor)
+            btnCodeTimer.bottomAnchor.constraint(equalTo: otpTextField.topAnchor, constant: -padding),
+            btnCodeTimer.trailingAnchor.constraint(equalTo: otpTextField.trailingAnchor)
         ])
     }
     

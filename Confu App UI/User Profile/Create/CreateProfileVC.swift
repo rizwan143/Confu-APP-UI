@@ -27,6 +27,7 @@ class CreateProfileVC: UIViewController, UIGestureRecognizerDelegate {
     var imagePickerController = UIImagePickerController()
     
     var dataSource = UserProfileDataSource()
+    var selectedImage : UIImage?
   //  private var createProfileVM: CreateProfileVM!
     
     private var isImageSelected: Bool!
@@ -83,14 +84,19 @@ class CreateProfileVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func actionButtonTapped() {
-        let validate = dataSource.validateTextFields(from: createProfileView)
-        if validate.success {
-           // Loader.startLoading()
-//            isImageSelected ? dataSource.uploadWithImage(from: createProfileView) : dataSource.uploadWithoutImage()
-        }
-        else {
-           // self.createAlert(title: "Error", message: validate.message)
-        }
+        let userProfileViewController = UserProfileVC()
+        userProfileViewController.selectedImage = self.selectedImage
+        userProfileViewController.navigationController?.isNavigationBarHidden = false
+            navigationController?.pushViewController(userProfileViewController, animated: true)
+     //   UserProfileVC
+//        let validate = dataSource.validateTextFields(from: createProfileView)
+//        if validate.success {
+//           // Loader.startLoading()
+////            isImageSelected ? dataSource.uploadWithImage(from: createProfileView) : dataSource.uploadWithoutImage()
+//        }
+//        else {
+//           // self.createAlert(title: "Error", message: validate.message)
+//        }
     }
     
     @objc func selectProfileImage() {
@@ -167,6 +173,7 @@ extension CreateProfileVC {
 extension CreateProfileVC: ProfileImagePresenting {
     func picked(image: UIImage) {
         createProfileView.ivAvatarImage.image = image
+        self.selectedImage = image
         isImageSelected = true
         createProfileView.uploadImage.isHidden = true
     }

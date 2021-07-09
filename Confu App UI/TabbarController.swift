@@ -11,8 +11,10 @@ class TabbarController: SOTabBarController {
 
     override func loadView() {
         super.loadView()
+        view.backgroundColor = .white
         SOTabBarSetting.tabBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         SOTabBarSetting.tabBarCircleSize = CGSize(width: 60, height: 60)
+        SOTabBarSetting.tabBarBackground = .black
     }
     
     override func viewDidLoad() {
@@ -20,16 +22,16 @@ class TabbarController: SOTabBarController {
         
         self.delegate = self
 
-        let firstViewController = ViewController()
+        let firstViewController = CallHistoryVC()
         firstViewController.title = "Home"
-        firstViewController.view.backgroundColor = .black
-        firstViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home-1"), selectedImage: UIImage(named: "home_Selected"))
+        firstViewController.view.backgroundColor = .white
+        firstViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "recentTapSelected"))
       //  firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         
         let secondViewController = CollectionViewVC()
         secondViewController.title = "LIVE"
         secondViewController.view.backgroundColor = .gray
-        secondViewController.tabBarItem = UITabBarItem(title: "LIVE", image: UIImage(named: "moon-1"), selectedImage: UIImage(named: "moon_Selected"))
+        secondViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "callTabUnselected"), selectedImage: UIImage(named: "tickTabSelected"))
 
       //  secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
         
@@ -37,7 +39,7 @@ class TabbarController: SOTabBarController {
         thirdViewController.title = "Party"
         thirdViewController.view.backgroundColor = .white
        // thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
-        thirdViewController.tabBarItem = UITabBarItem(title: "Party", image: UIImage(named: "music-1"), selectedImage: UIImage(named: "music_Selected"))
+        thirdViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "music"), selectedImage: UIImage(named: "scanTabSelected"))
         
         
 //        homeStoryboard.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_Selected"))
@@ -48,6 +50,7 @@ class TabbarController: SOTabBarController {
 
         viewControllers = [firstViewController, secondViewController,thirdViewController]
     }
+    
     
 }
 

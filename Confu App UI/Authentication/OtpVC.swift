@@ -71,8 +71,8 @@ class OtpVC: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func actionButtonTapped() {
-        let otpViewController = CreateProfileVC()
-            navigationController?.pushViewController(otpViewController, animated: true)
+        let createProfileViewController = CreateProfileVC()
+            navigationController?.pushViewController(createProfileViewController, animated: true)
 //                let tabBarController =  TabbarController()
 //                appDelegate.window?.rootViewController = tabBarController
 

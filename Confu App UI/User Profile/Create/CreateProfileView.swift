@@ -29,6 +29,8 @@ class CreateProfileView: UIView {
   //  let lblBody = CFBodyLabel(text: StaticLabels.cpViewBodyText.rawValue)
     
     let ivAvatarImage = CFAvatarImageView(frame: .zero)
+    let editNameImage = CFAvatarImageView(frame: .zero)
+    let editEmailImage = CFAvatarImageView(frame: .zero)
     let uploadImage = CFAvatarImageView(frame: .zero)
     let mailImage = CFImageView(frame: .zero)
     let usernameImage = CFImageView(frame: .zero)
@@ -102,19 +104,7 @@ class CreateProfileView: UIView {
         ])
     }
     
-//    private func setupBodyLabel() {
-//        addSubview(lblBody)
-//
-//        lblBody.numberOfLines = 3
-//        lblBody.font = RobotoFont.medium.size(12)
-//        lblBody.textColor = .black
-//
-//        NSLayoutConstraint.activate([
-//            lblBody.topAnchor.constraint(equalTo: lblLargeTitle.bottomAnchor, constant: 10),
-//            lblBody.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-//            lblBody.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding)
-//        ])
-//    }
+
     
     private func setupAvatarImageView() {
         addSubview(ivAvatarImage)
@@ -148,27 +138,30 @@ class CreateProfileView: UIView {
         addSubview(mailImage)
     
         mailImage.image = UIImage(named: "mail")
-        
+        mailImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
            // uploadImage.topAnchor.constraint(equalTo: lblLargeTitle.bottomAnchor, constant: 20),
-            mailImage.centerXAnchor.constraint(equalTo: tfEmail.centerXAnchor),
-            mailImage.trailingAnchor.constraint(equalTo: tfEmail.leadingAnchor),
+//            mailImage.centerXAnchor.constraint(equalTo: tfEmail.centerXAnchor),
+         //   mailImage.trailingAnchor.constraint(equalTo: tfEmail.leadingAnchor),
+            mailImage.topAnchor.constraint(equalTo: textFieldStack.topAnchor, constant: 95),
             mailImage.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 12),
             mailImage.heightAnchor.constraint(equalToConstant: 16),
             mailImage.widthAnchor.constraint(equalToConstant: 20)
         ])
     }
+
     private func setupUsernameImageView() {
         addSubview(usernameImage)
     
         usernameImage.image = UIImage(named: "username")
-        
+        usernameImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
            // uploadImage.topAnchor.constraint(equalTo: lblLargeTitle.bottomAnchor, constant: 20),
            // usernameImage.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant:  20),
-            usernameImage.trailingAnchor.constraint(equalTo: textFieldStack.leadingAnchor),
+            usernameImage.topAnchor.constraint(equalTo: textFieldStack.topAnchor, constant: 35),
+         //   usernameImage.trailingAnchor.constraint(equalTo: textFieldStack.leadingAnchor),
             usernameImage.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 12),
-            usernameImage.heightAnchor.constraint(equalToConstant: 16),
+            usernameImage.heightAnchor.constraint(equalToConstant: 20),
             usernameImage.widthAnchor.constraint(equalToConstant: 20)
         ])
     }
@@ -193,7 +186,7 @@ class CreateProfileView: UIView {
         
         NSLayoutConstraint.activate([
             textFieldStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-            textFieldStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            textFieldStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 40),
             textFieldStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             textFieldStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
@@ -205,7 +198,7 @@ class CreateProfileView: UIView {
         
         NSLayoutConstraint.activate([
             tfEmail.topAnchor.constraint(equalTo: textFieldStack.topAnchor, constant: 60),
-            tfEmail.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            tfEmail.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 40),
             tfEmail.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             tfEmail.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
@@ -252,7 +245,8 @@ class CreateProfileView: UIView {
         setupTextFieldStack()
         setupEmailTextField()
         setupUploadImageView()
-      //  setupMailImageView()
-      //  setupUsernameImageView()
+        setupMailImageView()
+        setupUsernameImageView()
+       
     }
 }

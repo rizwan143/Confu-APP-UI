@@ -19,11 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let swipingController = SwipingController(collectionViewLayout: layout)
-//        let tabBarController = WalkthroughVC()
-        //TabbarController()
-        
+       // let swipingController = TabbarController()
         window?.rootViewController = UINavigationController(rootViewController: swipingController)
-            //tabBarController
+            //swipingController //
+        
         window?.makeKeyAndVisible()
         
         return true

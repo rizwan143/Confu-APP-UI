@@ -46,7 +46,11 @@ open class SOTabBarController: UIViewController, SOTabBarDelegate {
         self.view.addSubview(tabBar)
         self.view.bringSubviewToFront(tabBar)
         self.drawConstraint()
+        
+        
     }
+
+
     
     private func drawConstraint() {
         let safeAreaView = UIView()
@@ -65,14 +69,17 @@ open class SOTabBarController: UIViewController, SOTabBarDelegate {
         constraints += [containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                         containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                         containerView.topAnchor.constraint(equalTo: view.topAnchor),
-                        tabBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                        tabBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                        tabBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                        tabBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
                         tabBar.heightAnchor.constraint(equalToConstant: SOTabBarSetting.tabBarHeight),
                         safeAreaView.topAnchor.constraint(equalTo: tabBar.bottomAnchor),
                         safeAreaView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                         safeAreaView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                         safeAreaView.bottomAnchor.constraint(equalTo: view.bottomAnchor)]
+        safeAreaView.backgroundColor = .white
+        tabBar.layer.cornerRadius = 20
         NSLayoutConstraint.activate(constraints)
+        
     }
     
     func tabBar(_ tabBar: SOTabBar, didSelectTabAt index: Int) {
