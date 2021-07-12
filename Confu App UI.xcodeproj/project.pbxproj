@@ -140,6 +140,8 @@
 		9CF585EDCC4FE55BE56FD7EB /* Pods_Confu_App_UI_Confu_App_UIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A6210954C0AD7BEB00A69C /* Pods_Confu_App_UI_Confu_App_UIUITests.framework */; };
 		DB5B98AB269877F4004A88AE /* CallHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5B98AA269877F4004A88AE /* CallHistoryVC.swift */; };
 		DB5B98AD2698781B004A88AE /* CallHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5B98AC2698781B004A88AE /* CallHistoryView.swift */; };
+		DB7B4C51269C41E40086413C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B4C50269C41E40086413C /* BaseViewController.swift */; };
+		DB7B4C53269C487B0086413C /* InviteConfuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B4C52269C487B0086413C /* InviteConfuViewController.swift */; };
 		DBF472482696DFDB0098F0A6 /* ProfileImagePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF472472696DFDB0098F0A6 /* ProfileImagePresenting.swift */; };
 /* End PBXBuildFile section */
 
@@ -306,6 +308,8 @@
 		CB8E1BFA2598D7B87B7A4E69 /* Pods-Confu App UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UI.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UI/Pods-Confu App UI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB5B98AA269877F4004A88AE /* CallHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryVC.swift; sourceTree = "<group>"; };
 		DB5B98AC2698781B004A88AE /* CallHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryView.swift; sourceTree = "<group>"; };
+		DB7B4C50269C41E40086413C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DB7B4C52269C487B0086413C /* InviteConfuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteConfuViewController.swift; sourceTree = "<group>"; };
 		DBF472472696DFDB0098F0A6 /* ProfileImagePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImagePresenting.swift; sourceTree = "<group>"; };
 		E2A2EB736CAA59C78588B3AC /* Pods-Confu App UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confu App UITests.debug.xcconfig"; path = "Target Support Files/Pods-Confu App UITests/Pods-Confu App UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -385,6 +389,8 @@
 				2C42112C268F503D00D5F235 /* ViewController.swift */,
 				2C421127268F503B00D5F235 /* Confu App UI-Bridging-Header.h */,
 				2CE9F0A126942C3100FE2151 /* Extensions.swift */,
+				DB7B4C50269C41E40086413C /* BaseViewController.swift */,
+				DB7B4C52269C487B0086413C /* InviteConfuViewController.swift */,
 			);
 			path = "Confu App UI";
 			sourceTree = "<group>";
@@ -1034,6 +1040,7 @@
 				2CE9F0FC2694924C00FE2151 /* ProfileImagePickerDelegate.swift in Sources */,
 				2CE9F1122694924C00FE2151 /* CFBodyLabel.swift in Sources */,
 				2CE9F1192694924C00FE2151 /* SignalStrengthIndicator.swift in Sources */,
+				DB7B4C53269C487B0086413C /* InviteConfuViewController.swift in Sources */,
 				2CE9F10A2694924C00FE2151 /* CFIconButton.swift in Sources */,
 				2CE9F19B2694927200FE2151 /* ObserverID.swift in Sources */,
 				2CE9F0F52694924C00FE2151 /* UserVC.swift in Sources */,
@@ -1092,6 +1099,7 @@
 				2CE9F19D2694927200FE2151 /* CellIdentifiers.swift in Sources */,
 				2CE9F0F32694924C00FE2151 /* MemberListVC.swift in Sources */,
 				2CE9F1102694924C00FE2151 /* CFFloatingTextField.swift in Sources */,
+				DB7B4C51269C41E40086413C /* BaseViewController.swift in Sources */,
 				2CE9F10D2694924C00FE2151 /* CFTextField.swift in Sources */,
 				2C421134268F503D00D5F235 /* ViewController.swift in Sources */,
 				2CE9F1022694924C00FE2151 /* LoadingNearbyMeetingView.swift in Sources */,

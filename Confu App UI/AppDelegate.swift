@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        let swipingController = SwipingController(collectionViewLayout: layout)
-       // let swipingController = TabbarController()
+      //  let swipingController = SwipingController(collectionViewLayout: layout)
+        let swipingController = TabbarController()
         window?.rootViewController = UINavigationController(rootViewController: swipingController)
-            //swipingController //
-        
+           // swipingController //
+        swipingController.navigationController?.isNavigationBarHidden = true
         window?.makeKeyAndVisible()
         
         return true

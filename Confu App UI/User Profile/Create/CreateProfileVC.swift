@@ -14,10 +14,6 @@ class CreateProfileVC: UIViewController, UIGestureRecognizerDelegate {
     private var createProfileView = CreateProfileView()
     
     var userPhoneNumber: String!
-    
-//    var remoteNotifications = RemoteNotifications()
-//    var pushKitManager = PushKitManager()
-//    var ntpManager = NTSManager()
     var fcmToken: String!
     var voipToken: String!
     
@@ -28,11 +24,7 @@ class CreateProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
     var dataSource = UserProfileDataSource()
     var selectedImage : UIImage?
-  //  private var createProfileVM: CreateProfileVM!
-    
     private var isImageSelected: Bool!
-//    private var firebaseFunction: FirebaseCloudFunctions
-//
     var tap: UITapGestureRecognizer! {
         UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
     }
@@ -88,15 +80,7 @@ class CreateProfileVC: UIViewController, UIGestureRecognizerDelegate {
         userProfileViewController.selectedImage = self.selectedImage
         userProfileViewController.navigationController?.isNavigationBarHidden = false
             navigationController?.pushViewController(userProfileViewController, animated: true)
-     //   UserProfileVC
-//        let validate = dataSource.validateTextFields(from: createProfileView)
-//        if validate.success {
-//           // Loader.startLoading()
-////            isImageSelected ? dataSource.uploadWithImage(from: createProfileView) : dataSource.uploadWithoutImage()
-//        }
-//        else {
-//           // self.createAlert(title: "Error", message: validate.message)
-//        }
+
     }
     
     @objc func selectProfileImage() {

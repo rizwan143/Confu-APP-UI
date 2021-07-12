@@ -11,7 +11,8 @@ import UIKit
 class CFTextField: UITextField {
     var padding: UIEdgeInsets?
     
-    var textFont = FontBook.heading.font
+    var textFont = RobotoFont.regular.size(13)
+        //FontBook.heading.font
     
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding!)
@@ -41,10 +42,10 @@ class CFTextField: UITextField {
         layer.masksToBounds = false
         font = textFont
         
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         placeholder = placeholderText
         textColor = .label
@@ -53,7 +54,7 @@ class CFTextField: UITextField {
             padding = UIEdgeInsets(top: 0, left: 35.0, bottom: 0, right: 5.0)
             leftViewMode = .always
             let imageContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+            let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 15, height: 15))
             imageContainerView.addSubview(imageView)
             imageView.contentMode = .scaleAspectFill
             imageView.image = leftImage
@@ -73,10 +74,10 @@ class CFTextField: UITextField {
         layer.masksToBounds = false
         font = textFont
         
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         placeholder = placeholderText
         textColor = .label
@@ -113,10 +114,10 @@ class CFTextField: UITextField {
         layer.masksToBounds = false
         font = textFont
         
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         placeholder = placeholderText
         textColor = .label
@@ -140,11 +141,11 @@ class CFTextField: UITextField {
         backgroundColor = .systemBackground
         layer.masksToBounds = false
         font = textFont
-        
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         placeholder = placeholderText
         textColor = .label
@@ -162,11 +163,11 @@ class CFTextField: UITextField {
         layer.masksToBounds = false
         
         font = textFont
-        
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         textColor = .label
         textAlignment = .right
@@ -191,11 +192,11 @@ class CFTextField: UITextField {
         layer.masksToBounds = false
         
         font = textFont
-        
-        layer.shadowColor = UIColor.systemGray2.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        layer.shadowOpacity = 1.0
-        layer.shadowRadius = 0.0
+//
+//        layer.shadowColor = UIColor.systemGray2.cgColor
+//        layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+//        layer.shadowOpacity = 1.0
+//        layer.shadowRadius = 0.0
         
         textColor = .label
         textAlignment = .left

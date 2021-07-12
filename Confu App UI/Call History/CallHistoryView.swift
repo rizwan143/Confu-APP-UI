@@ -7,19 +7,26 @@
 
 import UIKit
 
-class CallHistoryView: UIView {
-
+class CallHistoryView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let favCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! MyCell
+        favCell.lblBody.text = "Rizwan"
+        favCell.avatarImage.image = UIImage(named: "image1")
+    
+        return favCell
+    }
+    
     var CallHistoryVC: CallHistoryVC? {
                 didSet {
-                  
-        
+                    
                 }
             }
     var uvHeader = UIView()
     
-    let logoLbl = CFBodyLabel(text: StaticLabels.cpAppNameText.rawValue)
-    let ivAvatarImage = CFAvatarImageView(frame: .zero)
-    let calenderImage = CFImageView(frame: .zero)
     let emptyImage = CFImageView(frame: .zero)
     let scrollView = UIScrollView()
     let contentView = UIView()
@@ -28,6 +35,8 @@ class CallHistoryView: UIView {
     let secondaryPadding: CGFloat = 40
     let emptyLbl = CFBodyLabel(text: StaticLabels.pnNoMeetingFound.rawValue)
     let emptySubLbl = CFBodyLabel(text: StaticLabels.pnInstructionText.rawValue)
+    let favoritesLbl = CFBodyLabel(text: "Favorites")
+    var favoritesCollectionView : UICollectionView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,59 +50,7 @@ class CallHistoryView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    private func setupHeaderView() {
-//        addSubview(uvHeader)
-//
-//        uvHeader.backgroundColor = .black
-//
-//        uvHeader.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//            uvHeader.topAnchor.constraint(equalTo: topAnchor),
-//            uvHeader.leadingAnchor.constraint(equalTo: leadingAnchor),
-//            uvHeader.trailingAnchor.constraint(equalTo: trailingAnchor)
-//
-//        ])
-//    }
-    
-    private func setuplogoLabel() {
-        addSubview(logoLbl)
-        logoLbl.translatesAutoresizingMaskIntoConstraints = false
-        logoLbl.font = RobotoFont.medium.size(20)
-        logoLbl.textColor = .black
-        logoLbl.numberOfLines = 1
-        logoLbl.textAlignment = .center
-        NSLayoutConstraint.activate([
-            logoLbl.topAnchor.constraint(equalTo: topAnchor, constant: 60),
-            logoLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            //logoLbl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding)
-        ])
-    }
-    private func setupAvatarImageView() {
-        addSubview(ivAvatarImage)
-    
-        ivAvatarImage.image = UIImage(named: "myProfile")
-        ivAvatarImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            ivAvatarImage.topAnchor.constraint(equalTo: topAnchor, constant: 50),
-            ivAvatarImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            ivAvatarImage.heightAnchor.constraint(equalToConstant: 40),
-            ivAvatarImage.widthAnchor.constraint(equalToConstant: 40)
-        ])
-    }
-    private func setupCalenderImageView() {
-        addSubview(calenderImage)
-    
-        calenderImage.image = UIImage(named: "calender")
-        calenderImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            calenderImage.topAnchor.constraint(equalTo: topAnchor, constant: 55),
-            calenderImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -80),
-            
-            calenderImage.heightAnchor.constraint(equalToConstant: 28),
-            calenderImage.widthAnchor.constraint(equalToConstant: 34)
-        ])
-    }
+
     private func setupEmptyImageView() {
         addSubview(emptyImage)
     
@@ -136,14 +93,70 @@ class CallHistoryView: UIView {
            
         ])
     }
+    private func setupHeaderView() {
+        addSubview(uvHeader)
+        
+        uvHeader.backgroundColor = .white
+        
+        uvHeader.translatesAutoresizingMaskIntoConstraints = false
+   
+        NSLayoutConstraint.activate([
+            uvHeader.topAnchor.constraint(equalTo: topAnchor, constant: 100),
+            uvHeader.leadingAnchor.constraint(equalTo: leadingAnchor),
+            uvHeader.trailingAnchor.constraint(equalTo: trailingAnchor),
+            uvHeader.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
+    private func setupFavouriteLabel() {
+        addSubview(favoritesLbl)
+        favoritesLbl.translatesAutoresizingMaskIntoConstraints = false
+        favoritesLbl.font = RobotoFont.medium.size(20)
+        favoritesLbl.textColor = .black
+        favoritesLbl.numberOfLines = 1
+        favoritesLbl.textAlignment = .left
+        NSLayoutConstraint.activate([
+            favoritesLbl.topAnchor.constraint(equalTo: uvHeader.topAnchor, constant: 20),
+            favoritesLbl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            favoritesLbl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+           
+        ])
+    }
+    private func setUpFavouriteCollectionView()
+    {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 100, right: 15)
+        layout.itemSize = CGSize(width: frame.width/5, height: 100)
+        layout.scrollDirection = .horizontal
+       
+        favoritesCollectionView = UICollectionView(frame: CGRect(x: 0, y: 200, width: frame.width, height: 150), collectionViewLayout: layout)
+        favoritesCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        favoritesCollectionView.dataSource = self
+        favoritesCollectionView.delegate = self
+        favoritesCollectionView.reloadData()
+        favoritesCollectionView.register(MyCell.self, forCellWithReuseIdentifier: "MyCell")
+        favoritesCollectionView.isScrollEnabled = true
+        favoritesCollectionView.backgroundColor = UIColor.black
+        
+//        NSLayoutConstraint.activate([
+//            favoritesCollectionView.topAnchor.constraint(equalTo: favoritesLbl.bottomAnchor, constant: 20),
+//            favoritesCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+//            favoritesCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+//            favoritesCollectionView.heightAnchor.constraint(equalToConstant: 150)
+//
+//        ])
+       
+        addSubview(favoritesCollectionView)
+        bringSubviewToFront(favoritesCollectionView)
+    }
+    
     
     private func setupScreen() {
-        setuplogoLabel()
-        setupAvatarImageView()
-        setupCalenderImageView()
         setupEmptyImageView()
         setupEmptyLabel()
         setupSubEmptyLabel()
+        setupHeaderView()
+        setupFavouriteLabel()
+        setUpFavouriteCollectionView()
     }
 
 }

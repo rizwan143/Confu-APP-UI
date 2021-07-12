@@ -20,7 +20,8 @@ class CFButton: UIButton {
         setTitle(buttonText, for: .normal)
         self.backgroundColor = backgroundColor
         setTitleColor(titleColor, for: .normal)
-        titleLabel?.font = FontBook.heading.font
+        titleLabel?.font = RobotoFont.medium.size(15)
+            //FontBook.heading.font
     }
     
     init(buttonImage: UIImage) {

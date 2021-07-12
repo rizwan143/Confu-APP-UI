@@ -88,57 +88,7 @@ class OtpVC: UIViewController, UIGestureRecognizerDelegate {
 
 extension OtpVC {
     
-//    func setupListener() {
-//        otpVM.$isLoading.sink {
-//            $0 ? Loader.startLoading(): Loader.stopLoading()
-//        }.store(in: &cancellables)
-//
-//        otpVM.$error.sink { [weak self] in
-//            guard let self = self,
-//                let error = $0 else {
-//                    return
-//            }
-//            self.createAlert(title: "Oops!", message: error)
-//        }.store(in: &cancellables)
-//
-//        otpVM.$success.sink { [weak self] in
-//            guard let self = self,
-//                let _ = $0 else {
-//                    return
-//            }
-//            let createProfileVC = CreateProfileVC()
-//            createProfileVC.userPhoneNumber = self.userPhoneNumber
-//            self.navigationController?.pushViewController(createProfileVC, animated: true)
-//
-//        }.store(in: &cancellables)
-//
-//        otpVM.$isResendEnabled.sink { [weak self] in
-//            guard let self = self else {
-//                return
-//            }
-//            self.otpView.btnResendCode.isEnabled = $0
-//        }.store(in: &cancellables)
-//
-//        otpVM.$timerText.sink { [weak self] in
-//            guard let self = self,
-//                let text = $0 else {
-//                    return
-//            }
-//            self.otpView.btnResendCode.setTitle(text, for: .normal)
-//        }.store(in: &cancellables)
-//
-//        otpVM.$verificationId.sink { [weak self] in
-//            guard let self = self,
-//                let id = $0 else {
-//                    return
-//            }
-//            self.otpVM.startTimer()
-//            self.verificationID = id
-//            self.otpView.otpTextField.becomeFirstResponder()
-//        }.store(in: &cancellables)
-//    }
-    
-    
+
     func setKeyboarObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)

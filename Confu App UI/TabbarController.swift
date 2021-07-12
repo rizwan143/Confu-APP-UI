@@ -15,13 +15,14 @@ class TabbarController: SOTabBarController {
         SOTabBarSetting.tabBarTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         SOTabBarSetting.tabBarCircleSize = CGSize(width: 60, height: 60)
         SOTabBarSetting.tabBarBackground = .black
+        self.hidesBottomBarWhenPushed = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.delegate = self
-
+        self.navigationController?.isNavigationBarHidden = true
         let firstViewController = CallHistoryVC()
         firstViewController.title = "Home"
         firstViewController.view.backgroundColor = .white
@@ -30,7 +31,7 @@ class TabbarController: SOTabBarController {
         
         let secondViewController = CollectionViewVC()
         secondViewController.title = "LIVE"
-        secondViewController.view.backgroundColor = .gray
+        secondViewController.view.backgroundColor = .white
         secondViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "callTabUnselected"), selectedImage: UIImage(named: "tickTabSelected"))
 
       //  secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
