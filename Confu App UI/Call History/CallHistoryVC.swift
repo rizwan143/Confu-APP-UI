@@ -22,9 +22,11 @@ class CallHistoryVC: BaseViewController {
 //        callHistoryView.favoritesCollectionView.dataSource = self
 //        callHistoryView.favoritesCollectionView.delegate = self
         self.navigationController?.isNavigationBarHidden = true
+      //  addTopView()
 
         // Do any additional setup after loading the view.
     }
+  
     
 
     /*

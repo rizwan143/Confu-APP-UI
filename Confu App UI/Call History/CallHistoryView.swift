@@ -124,29 +124,31 @@ class CallHistoryView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     private func setUpFavouriteCollectionView()
     {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 100, right: 15)
-        layout.itemSize = CGSize(width: frame.width/5, height: 100)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        layout.itemSize = CGSize(width: 70, height: 100)
         layout.scrollDirection = .horizontal
        
-        favoritesCollectionView = UICollectionView(frame: CGRect(x: 0, y: 200, width: frame.width, height: 150), collectionViewLayout: layout)
+       favoritesCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+      //  favoritesCollectionView = UICollectionView(frame: CGRect(x: 0, y: 200, width: frame.width, height: frame.height / 1.85), collectionViewLayout: layout)
         favoritesCollectionView.translatesAutoresizingMaskIntoConstraints = false
         favoritesCollectionView.dataSource = self
         favoritesCollectionView.delegate = self
         favoritesCollectionView.reloadData()
         favoritesCollectionView.register(MyCell.self, forCellWithReuseIdentifier: "MyCell")
         favoritesCollectionView.isScrollEnabled = true
-        favoritesCollectionView.backgroundColor = UIColor.black
+        favoritesCollectionView.backgroundColor = UIColor.white
         
-//        NSLayoutConstraint.activate([
-//            favoritesCollectionView.topAnchor.constraint(equalTo: favoritesLbl.bottomAnchor, constant: 20),
-//            favoritesCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-//            favoritesCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-//            favoritesCollectionView.heightAnchor.constraint(equalToConstant: 150)
-//
-//        ])
+      
        
         addSubview(favoritesCollectionView)
-        bringSubviewToFront(favoritesCollectionView)
+       // bringSubviewToFront(favoritesCollectionView)
+        NSLayoutConstraint.activate([
+            favoritesCollectionView.topAnchor.constraint(equalTo: favoritesLbl.bottomAnchor, constant: 20),
+            favoritesCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            favoritesCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            favoritesCollectionView.heightAnchor.constraint(equalToConstant: 150)
+
+        ])
     }
     
     
