@@ -30,7 +30,7 @@ import UIKit
         }
         
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 16
+            return 30
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -139,7 +139,7 @@ import UIKit
             contactsCollectionView.dataSource = self
             contactsCollectionView.delegate = self
             contactsCollectionView.register(MyCell.self, forCellWithReuseIdentifier: "MyCell")
-            contactsCollectionView.isScrollEnabled = false
+            
             contactsCollectionView.backgroundColor = UIColor.white
             self.view.addSubview(contactsCollectionView)
         }
@@ -159,6 +159,7 @@ import UIKit
         @objc func inviteActionTapped()
         {
             let inviteViewController = InviteConfuViewController()
+            inviteViewController.modalPresentationStyle = .overCurrentContext
             inviteViewController.hidesBottomBarWhenPushed = false
                 navigationController?.pushViewController(inviteViewController, animated: true)
         }

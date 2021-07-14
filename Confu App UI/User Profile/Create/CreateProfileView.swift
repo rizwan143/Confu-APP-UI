@@ -26,8 +26,6 @@ class CreateProfileView: UIView {
     var uvHeader = UIView()
     
     let lblLargeTitle = CFBodyLabel(text: StaticLabels.cpViewLargeText.rawValue)
-  //  let lblBody = CFBodyLabel(text: StaticLabels.cpViewBodyText.rawValue)
-    
     let ivAvatarImage = CFAvatarImageView(frame: .zero)
     let editNameImage = CFAvatarImageView(frame: .zero)
     let editEmailImage = CFAvatarImageView(frame: .zero)

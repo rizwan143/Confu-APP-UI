@@ -12,6 +12,9 @@ class MyCell: UICollectionViewCell {
     
     let avatarImage = CFImageView(frame: .zero)
     let lblBody = CFBodyLabel(text: StaticLabels.vpNumberViewBodyText.rawValue)
+    var  avatarHeight : CGFloat = 70
+    var avatarWidth : CGFloat = 70
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupScreen()
@@ -23,11 +26,11 @@ class MyCell: UICollectionViewCell {
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         avatarImage.layer.cornerRadius = 12
         NSLayoutConstraint.activate([
-            avatarImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            avatarImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
             avatarImage.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
            // avatarImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 50),
-            avatarImage.heightAnchor.constraint(equalToConstant: 70),
-            avatarImage.widthAnchor.constraint(equalToConstant: 75)
+            avatarImage.heightAnchor.constraint(equalToConstant: CGFloat(avatarHeight)),
+            avatarImage.widthAnchor.constraint(equalToConstant: CGFloat(avatarWidth))
         ])
     }
     private func setupTitleLabel() {

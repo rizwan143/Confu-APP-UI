@@ -10,7 +10,6 @@ import UIKit
 class CallHistoryVC: BaseViewController {
     let callHistoryView = CallHistoryView()
     
-    
     override func loadView() {
         super.loadView()
 
@@ -19,13 +18,10 @@ class CallHistoryVC: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        callHistoryView.favoritesCollectionView.dataSource = self
-//        callHistoryView.favoritesCollectionView.delegate = self
-        self.navigationController?.isNavigationBarHidden = true
-      //  addTopView()
 
         // Do any additional setup after loading the view.
     }
+    
   
     
 
@@ -40,17 +36,3 @@ class CallHistoryVC: BaseViewController {
     */
 
 }
-//extension CallHistoryVC: UICollectionViewDelegate, UICollectionViewDataSource
-//{
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 10
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let favCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! MyCell
-//        favCell.lblBody.text = "Rizwan"
-//        favCell.avatarImage.image = UIImage(named: "image1")
-//
-//        return favCell
-//    }
-//}

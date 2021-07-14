@@ -64,8 +64,8 @@ class TableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             checkMarkImage.centerYAnchor.constraint(equalTo: avatarImage.centerYAnchor),
             checkMarkImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 350),
-            checkMarkImage.heightAnchor.constraint(equalToConstant: 28),
-            checkMarkImage.widthAnchor.constraint(equalToConstant: 28)
+            checkMarkImage.heightAnchor.constraint(equalToConstant: 20),
+            checkMarkImage.widthAnchor.constraint(equalToConstant: 20)
         ])
     }
     private func setupScreen() {
