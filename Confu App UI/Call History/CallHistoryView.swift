@@ -206,7 +206,7 @@ class CallHistoryView: UIView {
         favoritesCollectionView.dataSource = self
         favoritesCollectionView.delegate = self
         favoritesCollectionView.reloadData()
-        favoritesCollectionView.register(MyCell.self, forCellWithReuseIdentifier: "MyCell")
+        favoritesCollectionView.register(callContactsCell.self, forCellWithReuseIdentifier: "MyCell")
         favoritesCollectionView.isScrollEnabled = true
         favoritesCollectionView.backgroundColor = UIColor.white
         
@@ -269,7 +269,7 @@ extension CallHistoryView:  UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let favCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! MyCell
+        let favCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! callContactsCell
         favCell.lblBody.text = "Rizwan"
         favCell.avatarImage.image = UIImage(named: "image1")
     
@@ -302,12 +302,12 @@ extension CallHistoryView: UITableViewDelegate, UITableViewDataSource
         return 60
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // let navToCall = OnCallViewController()
-        let tabBarVC = CallTabbarController()
-//        onCallVC.modalPresentationStyle = .popover
-//        onCallVC.hidesBottomBarWhenPushed = false
-//        CallHistoryVC?.present(onCallVC, animated: true, completion: nil)
-        tabBarVC.modalPresentationStyle = .fullScreen
-        CallHistoryVC?.present(tabBarVC, animated: true, completion: nil)
+//        let navigationState = NavigationStates.shared
+//
+//        navigationState.setState(state: .callClick)
+        let navToCall = CallTabBarViewController()
+       
+        navToCall.modalPresentationStyle = .fullScreen
+        CallHistoryVC?.present(navToCall, animated: true, completion: nil)
     }
 }

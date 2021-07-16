@@ -1,4 +1,5 @@
 PODS:
+  - CGMath (1.0.2)
   - MaterialComponents (124.2.0):
     - MaterialComponents/ActionSheet (= 124.2.0)
     - "MaterialComponents/ActionSheet+Theming (= 124.2.0)"
@@ -650,32 +651,31 @@ PODS:
   - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
   - PhoneNumberKit/UIKit (3.3.3):
     - PhoneNumberKit/PhoneNumberKitCore
-  - SOTabBar (1.1.3)
 
 DEPENDENCIES:
+  - CGMath
   - MaterialComponents
   - PhoneNumberKit
-  - SOTabBar
 
 SPEC REPOS:
   trunk:
+    - CGMath
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - MotionAnimator
     - MotionInterchange
     - PhoneNumberKit
-    - SOTabBar
 
 SPEC CHECKSUMS:
+  CGMath: 41d118f6890c0e1a7aa10bd262f6f199590f72aa
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
   PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
-  SOTabBar: 27aea95bd6b39d1be3535c867a2cd3b5adc172e6
 
-PODFILE CHECKSUM: 5b23145d2a62cf492b5078fcc3db0e7f59030113
+PODFILE CHECKSUM: 1e8f27707ef84526937890ca1c2752a2cbf89aaf
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

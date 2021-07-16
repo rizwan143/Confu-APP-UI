@@ -110,8 +110,8 @@ class UserProfileVC: UIViewController, UIGestureRecognizerDelegate {
     
 
     @objc func actionButtonTapped() {
-        let tabBarController =  TabbarController()
-        appDelegate.window?.rootViewController = tabBarController
+//        let tabBarController =  TabbarController()
+//        appDelegate.window?.rootViewController = tabBarController
 
 //        let validate = dataSource.validateTextFields(from: userProfileView)
 //        if  validate.success {

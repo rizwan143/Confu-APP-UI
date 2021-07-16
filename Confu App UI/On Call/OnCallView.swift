@@ -146,7 +146,7 @@ class OnCallView: UIView {
         membersCollectionView.dataSource = self
         membersCollectionView.delegate = self
      
-        membersCollectionView.register(MyCell.self, forCellWithReuseIdentifier: "members")
+        membersCollectionView.register(callContactsCell.self, forCellWithReuseIdentifier: "members")
         membersCollectionView.isScrollEnabled = true
         membersCollectionView.backgroundColor = UIColor.white
       
@@ -235,7 +235,7 @@ extension OnCallView: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == membersCollectionView
         {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "members", for: indexPath) as! MyCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "members", for: indexPath) as! callContactsCell
     //        if testArray.count == 2
     //        {
             cell.avatarImage.heightAnchor.constraint(equalToConstant: CGFloat(50)).isActive = true

@@ -6,9 +6,10 @@ target 'Confu App UI' do
   use_frameworks!
 
   # Pods for Confu App UI
-  pod 'SOTabBar'
+
   pod 'MaterialComponents'
   pod 'PhoneNumberKit'
+pod 'CGMath'
   target 'Confu App UITests' do
     inherit! :search_paths
     # Pods for testing
